@@ -1,27 +1,39 @@
 import React from 'react';
 import styles from './TopNavBar.module.css';
-import { IoPersonOutline, IoCartOutline } from 'react-icons/io5';
+import { FiChevronDown } from 'react-icons/fi';
+
 const TopNavBar = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.right}>
-        <div className={styles.logo}>Logo</div>
-        <div className={styles.search}>
-          <input type='text' placeholder='Search any thing' />
-          <button>Search</button>
-        </div>
+        <a href='#' className={styles.nav__link}>
+          <span>Browse categories</span>
+          <FiChevronDown className={styles.link__icon} />
+        </a>
+        <a href='#' className={styles.nav__link}>
+          <span>Home</span>
+          <FiChevronDown className={styles.link__icon} />
+        </a>
+        <a href='#' className={styles.nav__link}>
+          <span>Catalog</span>
+          <FiChevronDown className={styles.link__icon} />
+        </a>
+        <a href='#' className={styles.nav__link}>
+          <span>Blog</span>
+          <FiChevronDown className={styles.link__icon} />
+        </a>
+        <a href='#' className={styles.nav__link}>
+          <span>Pages</span>
+          <FiChevronDown className={styles.link__icon} />
+        </a>
+        <a href='#' className={styles.nav__link}>
+          <span>About us</span>
+        </a>
       </div>
 
-      <div className={styles.links}>
-        <a href='#'>
-          <IoPersonOutline />
-          <span>Sign in</span>
-        </a>
-        <a href='#'>
-          <IoCartOutline />
-          <span>Cart</span>
-        </a>
-      </div>
+      <a href='#' className={styles.link}>
+        30 Days Return
+      </a>
     </nav>
   );
 };

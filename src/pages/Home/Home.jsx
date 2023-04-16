@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <div className='container'>
       <TopBar />
-      <TopNavBar />
       <TopSearchBar />
+      <TopNavBar />
 
       <div className='content'>
         <MainSlider />
