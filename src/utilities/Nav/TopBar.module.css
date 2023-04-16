@@ -1,0 +1,51 @@
+/* TOP BAR */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.8rem 4.2rem;
+}
+
+.left {
+  font-size: 1.4rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.list__item {
+  margin-left: 2.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.list__item__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.list__item__link:hover {
+  color: #515050;
+}
+
+.list__item__link {
+  font-size: 1.4rem;
+}
+
+.link__icon {
+  font-size: 2.4rem;
+}

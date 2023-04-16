@@ -1,5 +1,14 @@
 import React from 'react';
 import { TopBar, TopNavBar, TopSearchBar } from '../../utilities/Nav';
+import MainSlider from './MainSlider';
+import PopularProducts from './PopularProducts';
+import AddCard from './AddCard';
+import AddProductsSlider from './AddProductsSlider';
+import Features from './Features';
+import Testimonials from './Testimonials';
+import CompanyLogoSlider from './CompanyLogoSlider';
+import LatestNews from './LatestNews';
+import Footer from '../../utilities/Footer';
 
 const Home = () => {
   return (
@@ -7,6 +16,18 @@ const Home = () => {
       <TopBar />
       <TopNavBar />
       <TopSearchBar />
+
+      <div className='content'>
+        <MainSlider />
+        <PopularProducts />
+        <AddCard />
+        <AddProductsSlider />
+        <Features />
+        <Testimonials />
+        <CompanyLogoSlider />
+        <LatestNews />
+        <Footer />
+      </div>
     </div>
   );
 };
