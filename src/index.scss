@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  // max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TOP BAR */
+
+.top-bar,
+.top-bar-nav,
+.top-bar-search {
+  background-color: #fff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
