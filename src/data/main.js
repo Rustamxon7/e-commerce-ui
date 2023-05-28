@@ -27,3 +27,25 @@ export const new_items = [
   },
 ];
 
+export const list = [
+  {
+    img: cam,
+    name: 'Canon 780',
+    count: 6,
+  },
+  {
+    img: laptop,
+    name: 'Asus',
+    count: 2,
+  },
+  {
+    img: phone,
+    name: 'iPhone 12',
+    count: 5,
+  },
+  {
+    img: earphones,
+    name: 'Earphones 114P',
+    count: 12,
+  },
+];
