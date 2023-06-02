@@ -1,6 +1,7 @@
 import React from 'react';
 import { TopBar, TopNavBar, TopSearchBar } from '../../utilities/Nav';
 import MainSlider from './MainSlider';
+
 import PopularProducts from './PopularProducts';
 import AddCard from './AddCard';
 import AddProductsSlider from './AddProductsSlider';
@@ -12,22 +13,20 @@ import Footer from '../../utilities/Footer';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div>
       <TopBar />
       <TopSearchBar />
       <TopNavBar />
 
-      <div className='content'>
-        <MainSlider />
-        <PopularProducts />
+      <MainSlider />
+      {/* <PopularProducts />
         <AddCard />
         <AddProductsSlider />
         <Features />
         <Testimonials />
         <CompanyLogoSlider />
         <LatestNews />
-        <Footer />
-      </div>
+        <Footer /> */}
     </div>
   );
 };
