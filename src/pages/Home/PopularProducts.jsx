@@ -1,32 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import styles from './PopularProducts.module.css';
+import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { IoIosHeartEmpty } from 'react-icons/io';
-
-import { list } from '../../data/popularProducts.js';
-
+import { list, list_item_variants } from '../../data/popularProducts.js';
 import { motion } from 'framer-motion';
 
-const list_item_variants = {
-  hidden: {
-    opacity: 0,
-    y: 100,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-
-  hover: {
-    border: '1px solid #000',
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
+import styles from './PopularProducts.module.css';
 
 const PopularProducts = () => {
   return (
@@ -46,9 +24,9 @@ const PopularProducts = () => {
             <li>
               <button className={styles.btns}>Tablets</button>
             </li>
-            <li>
+            {/* <li>
               <button className={styles.btns}>Mouses</button>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -70,18 +48,39 @@ const PopularProducts = () => {
               />
               <div className={styles.info}>
                 <h1 className={styles.title}>{el.name}</h1>
-                <p className={styles.price}>${el.price}</p>
-                <div className={styles.star_icons}>
-                  <FaStar color='#ced4da' />
-                  <FaStar color='#ced4da' />
-                  <FaStar color='#ced4da' />
-                  <FaStar color='#ced4da' />
-                  <FaStar color='#ced4da' />
-                </div>
+                {/* <p className={styles.condition}>{el.condition}</p> */}
+                <p className={styles.stars}>
+                  {/* ({el.stars}) */}
+                  {Array(el.stars)
+                    .fill()
+                    .map((_, index) => (
+                      <FaStar key={index} color='#ffc107' />
+                    ))}
+                </p>
+                <p className={styles.price}>
+                  {el.prev_price ? (
+                    <>
+                      <span className={styles.prev_price}>
+                        ${el.prev_price}
+                      </span>
+                      <span className={styles.new_price}>${el.price}</span>
+                    </>
+                  ) : (
+                    <>
+                      <span
+                        className={styles.prev_price}
+                        style={{ visibility: 'hidden' }}
+                      >
+                        ${el.prev_price}
+                      </span>
+                      <span className={styles.new_price}>${el.price}</span>
+                    </>
+                  )}
+                </p>
               </div>
-              <div className={styles.flying_icon}>
+              {/* <div className={styles.flying_icon}>
                 <IoIosHeartEmpty />
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>

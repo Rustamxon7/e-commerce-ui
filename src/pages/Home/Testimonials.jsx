@@ -1,45 +1,13 @@
 import React, { useState } from 'react';
 import styles from './Testimonials.module.css';
-import { GoPrimitiveDot } from 'react-icons/go';
-import t1 from '../../assets/testimonials/t1.jpeg';
-import t2 from '../../assets/testimonials/t2.jpeg';
-import t4 from '../../assets/testimonials/t4.jpeg';
+
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
+import Dots from '../../components/Dots';
+
+import { list } from '../../data/testimonials';
 
 const Testimonials = () => {
-  const list = [
-    {
-      img: t1,
-      name: 'Savanna Nguyen',
-      information:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum exercitationem consectetur. Molestias molestiae quaerat quod, non consequuntur repudiandae veniam quia,',
-    },
-    {
-      img: t2,
-      name: 'Savanna Nguyen',
-      information:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum exercitationem consectetur. Molestias molestiae quaerat quod, non consequuntur repudiandae veniam quia,',
-    },
-    {
-      img: t4,
-      name: 'Savanna Nguyen',
-      information:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum exercitationem consectetur. Molestias molestiae quaerat quod, non consequuntur repudiandae veniam quia,',
-    },
-    {
-      img: t4,
-      name: 'Savanna Nguyen',
-      information:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum exercitationem consectetur. Molestias molestiae quaerat quod, non consequuntur repudiandae veniam quia,',
-    },
-    {
-      img: t4,
-      name: 'Savanna Nguyen',
-      information:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum exercitationem consectetur. Molestias molestiae quaerat quod, non consequuntur repudiandae veniam quia,',
-    },
-  ];
   const [listPosition, setListPosition] = useState(0);
   const isMobile = useMediaQuery({ query: '(max-width: 34em)' });
   const isTablet = useMediaQuery({
@@ -110,14 +78,11 @@ const Testimonials = () => {
             ))}
         </div>
 
-        <div className={styles.dots}>
-          {[0, 1, 2].map((i) => (
-            <span
-              className={listPosition === i ? styles.active_dot : styles.dot}
-              onClick={() => setListPosition(i)}
-            />
-          ))}
-        </div>
+        <Dots
+          position={listPosition}
+          setPosition={setListPosition}
+          styles={styles}
+        />
       </div>
     </div>
   );
