@@ -1,0 +1,232 @@
+.testimonials {
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 4.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 130rem;
+  height: fit-content;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4.6rem;
+
+  overflow: hidden;
+}
+
+.testimonials_section {
+  width: 100%;
+  height: 24rem;
+
+  display: flex;
+
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+
+  height: 100%;
+  width: 32%;
+  min-width: 32%;
+
+  padding: 1.4rem;
+
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: #003f62;
+}
+
+.info {
+  background-color: #e2f4ff;
+  color: #003f62;
+
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+
+  padding: 1.2rem;
+
+  border-radius: 15px;
+}
+
+.people {
+  height: 100px;
+  width: 100px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border-style: dotted;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #eda415;
+
+  font-size: 2.8rem;
+
+  margin-top: 2rem;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  font-size: 1.6rem;
+
+  z-index: 1;
+}
+
+.dot {
+  height: 1.4rem;
+  width: 1.4rem;
+
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #eda415;
+
+  cursor: pointer;
+}
+
+.active_dot {
+  height: 1.4rem;
+  width: 1.4rem;
+
+  border-radius: 50%;
+  background: #eda415;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 69em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .testimonials_section {
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .testimonials_section {
+    width: 90%;
+  }
+
+  .card {
+    width: 48%;
+    min-width: 48%;
+  }
+
+  .people {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .info {
+    font-size: 1.1rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .testimonials_section {
+    height: 20rem;
+    width: 90%;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .people {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    font-size: 0.9rem;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
