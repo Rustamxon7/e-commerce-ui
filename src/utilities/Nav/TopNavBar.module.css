@@ -1,12 +1,20 @@
+.to_nav_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 0rem 4rem;
+  background-color: #e5e2e2;
+  color: #343a40;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 0rem 4rem;
-  background-color: #e5e2e2;
-  color: #343a40;
+
+  width: 130rem;
 }
 
 .right {
@@ -35,6 +43,16 @@
   padding: 2.2rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+
+  position: relative;
+}
+
+.link__wrapper {
+  display: flex;
+  align-items: center;
   gap: 1.2rem;
 }
 
@@ -59,3 +77,116 @@
 .link:hover {
   color: #515050;
 }
+
+.dropdown {
+  position: absolute;
+  top: 7.2rem;
+  left: 0;
+  min-width: 100%;
+  z-index: 2;
+}
+
+.dropdown__item {
+  background-color: #e5e2e2;
+  color: #343a40;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 1.2rem 1.6rem;
+  padding-right: 7.4rem;
+  z-index: 1;
+}
+
+.dropdown__item ul {
+  list-style: none;
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 2;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  /* .top {
+    display: none;
+  } */
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .to_nav_bar {
+    padding: 0rem 3.2rem;
+  }
+
+  .nav__link {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .link__icon {
+    font-size: 1.4rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .to_nav_bar {
+    display: none;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
