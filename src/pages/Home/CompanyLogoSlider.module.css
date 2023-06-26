@@ -1,0 +1,104 @@
+.company_logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 4.6rem;
+}
+
+.container {
+  width: 130rem;
+  overflow: hidden;
+  border-radius: 1.6rem;
+
+  height: fit-content;
+  position: relative;
+}
+
+.logos {
+  background-color: #e2f4ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 12rem;
+
+  border-radius: 1.5rem;
+}
+
+.company_logos img {
+  width: auto;
+  height: 8rem;
+
+  object-fit: contain;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 69em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .company_logos {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .logos {
+    height: 8rem;
+  }
+
+  .company_logos img {
+    height: 4rem;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
