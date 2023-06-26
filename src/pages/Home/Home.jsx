@@ -19,14 +19,16 @@ const Home = () => {
       <TopNavBar />
 
       <MainSlider />
-      {/* <PopularProducts />
-        <AddCard />
-        <AddProductsSlider />
-        <Features />
-        <Testimonials />
-        <CompanyLogoSlider />
+      <PopularProducts />
+      <AddProductsSlider />
+      <Features />
+      <Testimonials />
+      <CompanyLogoSlider />
+      <Footer />
+      
+      {/* 
         <LatestNews />
-        <Footer /> */}
+     */}
     </div>
   );
 };
