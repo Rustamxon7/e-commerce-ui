@@ -1,0 +1,77 @@
+.SubscribeToNewsLetter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 130rem;
+  height: 12rem;
+
+  background-color: #fff;
+  border-radius: 1.8rem;
+  padding: 1.8rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1b5a7d;
+}
+
+.input {
+  border: 1px solid #eda415;
+  background-color: #eda415;
+  border-radius: 1.4rem;
+
+  padding: 0.8rem 1.6rem;
+  width: 32rem;
+  height: fit-content;
+
+  color: #ffffff;
+  transition: height 0.5s, width 0.5s;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.email_address {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.email_address::placeholder {
+  color: #ffffff;
+}
+
+.btn {
+  color: #ffffff;
+
+  background: none;
+  border: none;
+
+  font-weight: 600;
+
+  padding: 0.6rem;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.SubscribeToNewsLetter span span {
+  line-height: 15px;
+  color: #606060;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
