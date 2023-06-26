@@ -1,12 +1,25 @@
+.top_search_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1.8rem 4.8rem;
+  background-color: #003f62;
+  color: #f1f3f5;
+}
+
+.menu {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 1.8rem 4.8rem;
-  background-color: #003f62;
-  color: #f1f3f5;
+
+  width: 130rem;
 }
 
 .right {
@@ -72,3 +85,111 @@
   color: #f1f3f5;
   font-size: 1.4rem;
 }
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  /* .top {
+    display: none;
+  } */
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .search input {
+    font-size: 1.2rem;
+  }
+
+  .search button {
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .top_search_bar {
+    padding: 1.8rem 3.6rem;
+  }
+
+  .right {
+    gap: 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .top_search_bar {
+    padding: 1.8rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .right {
+    gap: 2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    font-size: 2.8rem;
+  }
+
+  .search {
+    width: 22rem;
+  }
+
+  .search input {
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .search button {
+    display: none;
+  }
+
+  .links span {
+    display: none;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
