@@ -1,0 +1,203 @@
+.footer {
+  background-color: #e2f4ff;
+  padding: 2.4rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.picture {
+  height: 4rem;
+  width: auto;
+  object-fit: cover;
+}
+
+.address_info {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25px;
+
+  color: #1b5a7d;
+}
+
+hr {
+  color: #1b5a7d;
+  width: 150%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+.icon {
+  font-size: 2.4rem;
+  color: #1b5a7d;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1b5a7d;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding-left: 2.4rem;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dot {
+  color: #80c1e4;
+  font-size: 1.2rem;
+}
+
+.links li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #1b5a7d;
+  font-weight: 400;
+}
+
+.links li a:hover {
+  color: #eda415;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 69em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .logos {
+    height: 8rem;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    row-gap: 4rem;
+    width: 100%;
+  }
+
+  .picture {
+    height: 3.2rem;
+  }
+
+  .address {
+    width: 40%;
+  }
+
+  .address_info {
+    font-size: 1.4rem;
+  }
+
+  .info {
+    width: 40%;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .links {
+    padding-left: 0;
+  }
+
+  .links li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
