@@ -16,16 +16,11 @@ const AddProductsSlider = () => {
           animate={{
             scale: 1.1,
           }}
-
-          // whileHover={{
-          //   scale: 1.1,
-          //   transition: { duration: 0.5 },
-          // }}
           transition={{
             repeat: Infinity,
             duration: 3,
             repeatType: 'reverse',
-          }}
+        }}
         />
         <div className={styles.flying_sale}>
           <button className={styles.btn}>New Laptop</button>
