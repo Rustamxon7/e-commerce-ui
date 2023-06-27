@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Features.module.css';
-import { AiTwotoneStar } from 'react-icons/ai';
-import { SlBasket } from 'react-icons/sl';
+
 import { HiCube } from 'react-icons/hi';
 import { FaCrown } from 'react-icons/fa';
 import { BsShieldLockFill } from 'react-icons/bs';

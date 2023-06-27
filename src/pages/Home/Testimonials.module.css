@@ -43,7 +43,7 @@
 
   padding: 1.4rem;
 
-  border: 1px solid #ccc;
+  border: 1px solid #c4d9ef;
   border-radius: 1rem;
 
   display: flex;
@@ -61,12 +61,12 @@
   font-size: 1.8rem;
   font-weight: 500;
 
-  color: #003f62;
+  color: #343a40;
 }
 
 .info {
-  background-color: #e2f4ff;
-  color: #003f62;
+  background-color: #edf6ff;
+  color: #495057;
 
   font-size: 1.2rem;
   letter-spacing: 1px;

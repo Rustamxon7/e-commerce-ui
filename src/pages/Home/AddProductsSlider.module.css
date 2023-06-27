@@ -5,7 +5,9 @@
 
   height: 100%;
 
-  padding-bottom: 4.6rem;
+  padding: 4.8rem 0;
+
+  background-color: #f6f8fa;
 }
 
 .container {
@@ -41,14 +43,14 @@ img {
 }
 
 .title {
-  color: #2e8fc5;
+  color: #3797ff;
 
   font-size: 4rem;
   font-weight: 700;
 }
 
 .size {
-  color: #ffffff;
+  color: #f8f9fa;
 
   font-size: 2.2rem;
   font-weight: 500;
@@ -58,22 +60,24 @@ img {
   width: 12rem;
   height: 4rem;
 
-  background-color: #eda415;
-  color: #ffffff;
+  background-color: #ff8a37;
+  color: #f8f9fa;
 
-  border: 2px solid #eda415;
+  border: 2px solid #ff8a37;
   border-radius: 1.2rem;
 
   font-weight: 600;
 
-  padding: 0.6rem;
+  padding: 0.4rem;
 }
 
 .btn:hover {
   background-color: #ffffff;
-  color: #2e8fc5;
+  color: #3797ff;
 
   border: 2px solid #ffffff;
+
+  transition: all 0.3s ease;
 }
 
 /**************************/

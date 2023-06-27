@@ -1,5 +1,5 @@
 .footer {
-  background-color: #e2f4ff;
+  background-color: #edf6ff;
   padding: 2.4rem;
   width: 100%;
 
@@ -37,11 +37,11 @@
   font-weight: 400;
   line-height: 25px;
 
-  color: #1b5a7d;
+  color: #343a40;
 }
 
 hr {
-  color: #1b5a7d;
+  color: #adb5bd;
   width: 150%;
 }
 
@@ -54,7 +54,7 @@ hr {
 
 .icon {
   font-size: 2.4rem;
-  color: #1b5a7d;
+  color: #343a40;
 }
 
 .info {
@@ -66,7 +66,7 @@ hr {
 .title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1b5a7d;
+  color: #343a40;
 }
 
 .links {
@@ -84,14 +84,14 @@ hr {
 }
 
 .dot {
-  color: #80c1e4;
+  color: #ced4da;
   font-size: 1.2rem;
 }
 
 .links li a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: #1b5a7d;
+  color: #495057;
   font-weight: 400;
 }
 

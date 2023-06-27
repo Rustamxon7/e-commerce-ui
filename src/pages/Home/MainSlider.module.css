@@ -54,7 +54,7 @@
 
 .big_title {
   font-size: 4.8rem;
-  color: #1b5a7d;
+  color: #495057;
 }
 
 .title_btns {
@@ -87,7 +87,7 @@
 
   border-radius: 50%;
   background: none;
-  border: 1px solid #eda415;
+  border: 1px solid #ff8a37;
 
   cursor: pointer;
 }
@@ -97,7 +97,7 @@
   width: 1.4rem;
 
   border-radius: 50%;
-  background: #eda415;
+  background: #ff8a37;
 }
 
 .btns {
@@ -118,16 +118,16 @@
 }
 
 .orange_btn {
-  background-color: #eda415;
-  color: #fff;
+  background-color: #ff8a37;
+  color: #f8f9fa;
   border: none;
 }
 
 .white_btn {
-  background-color: #fff;
-  color: #003f62;
+  background: none;
+  color: #495057;
 
-  border: 1px solid #003f62;
+  border: 1px solid #495057;
 }
 
 .main_img {
@@ -154,7 +154,7 @@
   width: 14rem;
 
   border-radius: 50%;
-  background-color: #eda415;
+  background-color: #ff8a37;
 
   display: flex;
   align-items: center;
@@ -186,8 +186,8 @@
 .to_right {
   position: absolute;
   border: none;
-  color: #003f62;
-  background-color: #eaeaea;
+  color: #007bff;
+  background-color: #edf6ff;
   border-radius: 50%;
   font-size: 2.4rem;
   z-index: 10;
@@ -209,6 +209,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  overflow-x: scroll;
 
   height: 16rem;
 }
@@ -225,7 +226,7 @@
   min-width: 30%;
   height: auto;
 
-  border: 1px solid rgb(136, 134, 134);
+  border: 1px solid #c4d9ef;
   border-radius: 1.8rem;
 
   padding: 1.2rem;
@@ -245,14 +246,14 @@
 }
 
 .canon {
-  color: #003f62;
+  color: #343a40;
 
   font-size: 2.4rem;
   font-weight: 600;
 }
 
 .number {
-  color: #003f62;
+  color: #495057;
 
   font-size: 1.8rem;
   font-weight: 500;

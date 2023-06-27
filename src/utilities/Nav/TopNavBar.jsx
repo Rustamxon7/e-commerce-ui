@@ -162,7 +162,7 @@ const TopNavBar = () => {
 
         <div className={styles.right}>
           <a href='#' className={styles.nav__link} onClick={() => setActive(1)}>
-            <div className={styles.link__wrapper}>
+            <div className={styles.link__wrapper + ' ' + styles.link__text}>
               <span>Browse categories</span>
               <FiChevronDown className={styles.link__icon} />
             </div>

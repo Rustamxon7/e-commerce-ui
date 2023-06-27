@@ -5,11 +5,15 @@
 
   width: 100%;
   padding: 1.8rem 4.8rem;
-  background-color: #003f62;
-  color: #f1f3f5;
+  background-color: #004fa4;
+  color: #f8f9fa;
 }
 
 .menu {
+  display: none;
+}
+
+.mobile_menu {
   display: none;
 }
 
@@ -57,7 +61,7 @@
   padding: 1.6rem 3.2rem;
   border: none;
   border-radius: 1.2rem;
-  background-color: #eda415;
+  background-color: #ff8024;
   color: #f8f9fa;
   font-size: 1.4rem;
   cursor: pointer;
@@ -65,7 +69,7 @@
 }
 
 .search button:hover {
-  background-color: #b6831e;
+  background-color: #ff8a37;
   color: #f8f9fa;
   transition: 0.2s;
 }
@@ -82,7 +86,7 @@
   align-items: center;
   gap: 0.4rem;
   text-decoration: none;
-  color: #f1f3f5;
+  color: #f8f9fa;
   font-size: 1.4rem;
 }
 
@@ -164,6 +168,96 @@
 
   .menu {
     font-size: 2.8rem;
+  }
+
+  .mobile_menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+
+    color: #212529;
+    background-color: #f2f5f7;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .exit {
+    padding: 1.2rem;
+    font-size: 2.8rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ffffff;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffff;
+    width: 98%;
+  }
+
+  .categories_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+    padding: 1.4rem;
+
+    border-bottom: #004fa424 0.1rem solid;
+  }
+
+  .categories_title:hover {
+    background-color: #f2f5f7;
+    transition: 0.2s;
+  }
+
+  .categories_icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .categories_list {
+    display: none;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .nav_link {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #212529;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_link:hover {
+    background-color: #f2f5f7;
+    transition: 0.2s;
+  }
+
+  .login {
+    font-size: 1.4rem;
   }
 
   .search {
